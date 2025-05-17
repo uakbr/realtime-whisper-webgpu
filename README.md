@@ -1,24 +1,24 @@
-# React + Vite
+# Whisper WebGPU
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Whisper WebGPU is a React + Vite application that brings Whisper speech recognition directly to the browser using WebGPU. It supports real-time transcription from the microphone or uploaded audio files and lets you choose between different model sizes.
 
-## Development
+1. Install Node.js (v18 or later recommended).
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   This launches Vite and serves the app at the local address printed in the console.
 
-Install dependencies:
+## Features
 
-```bash
-npm install
-```
+- Real‑time speech recognition in the browser
+- Microphone and file upload modes
+- Selectable Whisper models (tiny, base, small, medium)
+- Language selection and transcription history
+- Progress indicators and basic error handling
 
-Run the test suite:
-
-```bash
-npm test
-```
-
-Tests run automatically in GitHub Actions on every push and pull request.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Once a model is loaded you can transcribe speech without sending audio to a server, all processing happens locally through WebGPU.
