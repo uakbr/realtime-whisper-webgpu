@@ -2,8 +2,6 @@
 
 Whisper WebGPU is a React + Vite application that brings Whisper speech recognition directly to the browser using WebGPU. It supports real-time transcription from the microphone or uploaded audio files and lets you choose between different model sizes.
 
-## Setup
-
 1. Install Node.js (v18 or later recommended).
 2. Install dependencies:
    ```bash
