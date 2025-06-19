@@ -31,5 +31,6 @@
     "@testing-library/react": "^14.0.0",
     "@testing-library/jest-dom": "^6.1.5",
     "jsdom": "^22.1.0"
-  }
+  },
+  "license": "MIT"
 }
