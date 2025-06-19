@@ -125,7 +125,8 @@ export const logError = (errorType, error, context = {}) => {
 export const checkBrowserSupport = () => {
   const features = {
     webGPU: !!navigator.gpu,
-    audioContext: !!window.AudioContext,
+    // Safari uses webkitAudioContext
+    audioContext: !!(window.AudioContext || window.webkitAudioContext),
     mediaDevices: !!navigator.mediaDevices,
     getUserMedia: !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia),
     webWorkers: !!window.Worker,
